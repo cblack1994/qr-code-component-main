@@ -19,21 +19,21 @@ html {
 
 body
 {
-    background-color: var(--Slate300);
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Slate300);
 }
 
 section {
-    width: 320px;
-    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 320px;
+    height: 500px;
     background-color: var(--White);
     border-radius: 20px;
 }
@@ -53,12 +53,27 @@ figure img
     padding: 0px 16px;
 }
 
-.text-container .text1 {
-    color: var(--Slate900);
+.text-container p:nth-child(1) {
+    margin-bottom: 16px;
+    text-align: center;
     font-family: "Outfit", sans-serif;
     font-size: 2.2rem;
     font-weight: 700;
     line-height: 120%;
-    margin-bottom: 16px;
+    color: var(--Slate900);
+}
+
+.text-container p:nth-child(2) {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: var(--Slate500);
+}
+
+.attribution {
+    margin-top: 2rem;
 }
 
